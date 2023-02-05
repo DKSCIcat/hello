@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+::selection {
+  background-color: #0000;
+}
+.inner-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+}
+.halo {
+  border: solid 1px #fff;
+  box-shadow: 0px 0px 6px #ddd;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(137deg, #113, #456);
+  /* background: url("./star2.jpg") center center no-repeat; */
+  background-size: cover;
+  overflow: hidden;
+}
+#clock {
+  /* 移动端竖屏应为vw */
+  width: 95vh;
+  height: 95vh;
+  transform-style: preserve-3d;
+}
+main {
+  width: 90vh;
+  height: 90vh;
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+}
+main * {
+  position: absolute;
+}
+
+#tiangan {
+  z-index: 3;
+  width: 60vh;
+  height: 60vh;
+}
+#tiangan > div {
+  width: 58vh;
+  height: 58vh;
+  animation: zhuan 60s linear infinite;
+}
+#dizhi {
+  z-index: 2;
+  width: 80vh;
+  height: 80vh;
+}
+#dizhi > div {
+  width: 70vh;
+  height: 70vh;
+  animation: zhuan 72s linear infinite;
+}
+
+#tiangan-in > :nth-child(n),
+#dizhi-in > :nth-child(n),
+.nei {
+  width: 2vh;
+  height: 2vh;
+  color: #5af;
+  text-shadow: 0px 0px 8px #25b;
+  text-align: center;
+}
+
+#tiangan-in > :nth-child(n) {
+  translate: 0 -26vh;
+  transform-origin: center 27vh;
+  font-size: 1.8rem;
+}
+#dizhi-in > :nth-child(n) {
+  translate: 0 -38vh;
+  transform-origin: center 39vh;
+  font-size: 1.5rem;
+}
+.nei > :nth-child(n) {
+  translate: 0 -46vh;
+  transform-origin: center 47vh;
+}
+.nei {
+  width: 42vh;
+  height: 42vh;
+  animation: zhuan 60s linear infinite reverse;
+}
+
+@keyframes zhuan {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+#clock,
+#dizhi,
+#kernel {
+  transition: 1.5s;
+}

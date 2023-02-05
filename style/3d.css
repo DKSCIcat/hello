@@ -1,0 +1,10 @@
+#clock {
+  transform: rotateY(25deg) rotateX(42deg);
+}
+#dizhi {
+  transform: translateZ(-150px);
+}
+#kernel {
+  transform: translateZ(120px);
+}
+

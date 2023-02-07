@@ -1,0 +1,169 @@
+/* 横屏模式 中大型屏幕设备和平板设备 */
+@media only screen and (min-width: 768.1px) {
+  #logo {
+    padding: 0.5em 1em;
+  }
+  .AppCollection {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .adapt-icon {
+    display: none;
+  }
+  .lists > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .searchBar {
+    justify-content: center;
+    border-radius: 1em;
+    border: 1px solid var(--nav_search);
+    background-color: var(--nav_search);
+    padding: 0.2em;
+    width: 300px;
+    height: 32px;
+    box-shadow: 1px 1px 10px #8888, -1px -1px 10px #8888;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+  .searchBar > input {
+    width: 256px;
+    height: 28px;
+  }
+  .searchBar > span {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .iconfont {
+    font-size: 21px;
+  }
+  nav {
+    height: 49px;
+  }
+  /* 列表图标========三道杠======== */
+  .AppCollection {
+    order: 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .AppCollection > .adapt-icon {
+    position: relative;
+    z-index: 13;
+    margin-left: 1.2rem;
+  }
+  .icon-icon-guanbi2 {
+    color: #555;
+  }
+  i {
+    display: block;
+  }
+  #appList > i {
+    transition: 0.3s linear;
+  }
+  .transtion-rotate {
+    transform: rotate(360deg);
+  }
+  .lists {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 260px;
+    height: 100vh;
+    background: #354c;
+    border: solid 1px #0000;
+    transform: translateX(-260px);
+  }
+
+  .lists::before {
+    content: "";
+    display: block;
+    width: 256px;
+    height: 55px;
+    border: solid 1px #0000;
+    background-color: #fff;
+  }
+  .lists > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 3vh;
+  }
+  .lists > ul > li {
+    width: 180px;
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  /* 列表图标========三道杠========end */
+  #logo {
+    order: 2;
+    flex: 1;
+    padding: 0.3em 0;
+  }
+
+  .searchBar {
+    order: 3;
+    flex: 1;
+    justify-content: end;
+  }
+  .searchBar > .icon-search {
+    margin-right: 1.2rem;
+  }
+  .searchBar > input {
+    display: none;
+  }
+  /* 通过JS添加的类 */
+  .lsArise {
+    transition: 0.5s;
+    transform: translateX(0px);
+  }
+
+  .drop-out {
+    transition: 0.3s;
+  }
+  /* ===模糊处理器=== */
+  .blurred {
+    transition: 1s;
+    filter: blur(10px);
+  }
+  /* ===模糊处理器===end */
+  .XiangyingSearchBar .show-search {
+    flex: 4;
+    display: flex;
+  }
+  .XiangyingSearchBar {
+    justify-content: center;
+    border-radius: 1em;
+    border: 1px solid var(--nav_search);
+    background-color: var(--nav_search);
+    padding: 0.2em;
+    width: 80vw;
+    height: var(--nav_search_height);
+    box-shadow: 1px 1px 10px #3438, -1px -1px 10px #3438;
+    margin-left: auto;
+    margin-right: 1em;
+    flex: 4;
+  }
+  .XiangyingSearchBar > input {
+    width: 66vw;
+    height: var(--innerSearch_h);
+    display: block;
+  }
+  .XiangyingSearchBar > span {
+    display: flex;
+    justify-content: center;
+  }
+  .XiangyingSearchBar > .icon-search {
+    margin-right: 1vw;
+  }
+}

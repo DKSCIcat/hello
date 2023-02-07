@@ -1,0 +1,100 @@
+{
+  "id": "3492954",
+  "name": "mysite",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30339126",
+      "name": "icon-编辑",
+      "font_class": "icon-bianji",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "30339360",
+      "name": "icon-删除",
+      "font_class": "icon-shanchu",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "30339416",
+      "name": "icon-新增",
+      "font_class": "icon-xinzeng",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "30329391",
+      "name": "icon-伙伴",
+      "font_class": "icon-huoban",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "30329603",
+      "name": "icon-网络",
+      "font_class": "icon-wangluo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "30330251",
+      "name": "icon-邮箱",
+      "font_class": "icon-youxiang",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "30336234",
+      "name": "icon-不可见",
+      "font_class": "icon-bukejian",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "30336503",
+      "name": "icon-可见",
+      "font_class": "icon-kejian",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "30338546",
+      "name": "icon-关闭2",
+      "font_class": "icon-guanbi2",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "30338652",
+      "name": "icon-下载",
+      "font_class": "icon-xiazai",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "5013",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15634356",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "2076426",
+      "name": "搜索小",
+      "font_class": "sousuoxiao",
+      "unicode": "e8d6",
+      "unicode_decimal": 59606
+    }
+  ]
+}

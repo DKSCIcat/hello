@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+  width: var(--scrollerbar_wight);
+  height: var(--scrollerbar_height);
+  background-color: var(--transparent);
+}
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--scroller_bar_bj);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: var(--scroller_bar_thumb);
+  box-shadow: 0 1px 5px #7fc, 0 -1px 5px #7fc;
+}

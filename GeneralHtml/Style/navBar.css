@@ -1,0 +1,67 @@
+header > nav {
+  width: 100vw;
+  background: var(--nav_color);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #0000;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#logo > h1 > a {
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--logoText);
+  font-size: 1.2em;
+}
+/* .lists {} */
+header > nav > .AppCollection > .lists > ul {
+  list-style-type: none;
+}
+header > nav > .AppCollection > .lists > ul > li {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--transparent);
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+.AppCollection > .lists > ul > li:hover {
+  text-shadow: 1px 1px 5px var(--nav_text_color),
+    -1px -1px 5px var(--nav_text_color);
+}
+header > nav > .AppCollection > .lists > ul > li > a {
+  text-decoration: none;
+  color: var(--nav_text_color);
+}
+
+.searchBar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.iconfont {
+  transition: 0.5s;
+  color: #ddd;
+}
+
+.searchBar > input {
+  border: 1px solid var(--transparent);
+  background-color: var(--transparent);
+  color: var(--nav_search_color);
+  font-size: medium;
+  text-align: center;
+}
+.searchBar > input:focus {
+  outline: none;
+}
+/* 通过JS添加的类 */
+.icon-heiliebiao {
+  color: #787878;
+}

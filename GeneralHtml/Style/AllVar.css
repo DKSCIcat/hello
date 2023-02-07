@@ -1,0 +1,19 @@
+html:root {
+  --scroller_bar_bj: #f7f7f7;
+  --scroller_bar_thumb: #3cf;
+  --scrollerbar_wight: 0.6rem;
+  --nav_color: #5555;
+  --nav_text_color: #fefefe;
+  --nav_search: #3339;
+  --nav_search_height: 30px;
+  --innerSearch_h: 25px;
+  --innerSearch_w: 211px;
+  --nav_search_width: 255px;
+  --nav_search_color: var(--scroller_bar_thumb);
+  --transparent: #0000;
+  --footer_color: #555;
+  --footer_text_color: #ccc;
+  --welcome_text: #fbfbfb;
+  --logoText: #fff;
+  /* --logoTextShadow: #eee; */
+}
